@@ -26,6 +26,10 @@
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('flutter_service_worker.js?v=2656270865');
       });
+      window.addEventListener('beforeinstallprompt', function (e) {
+         e.preventDefault();
+          return false;
+         });
     }
   </script>
 <script src="main.dart.js?v=2656270865" type="application/javascript"></script>
